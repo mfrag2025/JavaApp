@@ -30,7 +30,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jstl.version>1.2</jstl.version>
 		<testng.version>6.8.8</testng.version>
-        <java.version>1.8</java.version>
+        <java.version>1.7</java.version>
         <surefire.version>2.17</surefire.version>
         <jacoco.version>0.7.2.201409121644</jacoco.version>
 	</properties>
