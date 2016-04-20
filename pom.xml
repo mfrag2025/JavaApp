@@ -15,6 +15,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	
 	<developers>
 		<developer>
 			<id>deepak</id>
@@ -22,19 +23,26 @@
 			<email>deepaksamantaray49@gmail.com</email>
 		</developer>
 	</developers>
+	
 	<properties>
 		<spring.version>3.2.8.RELEASE</spring.version>
 		<spring.security.version>3.2.3.RELEASE</spring.security.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jstl.version>1.2</jstl.version>
+		<testng.version>6.8.8</testng.version>
+        <java.version>1.8</java.version>
+        <surefire.version>2.17</surefire.version>
+        <jacoco.version>0.7.2.201409121644</jacoco.version>
 	</properties>
+	
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
    <!--  Spring Dependancies -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -96,5 +104,43 @@
   </dependencies>
   <build>
     <finalName>MercuryAppInterface</finalName>
+
+    <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+            </plugin> 
+            
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                                  
+                <executions>
+                    <execution>
+                        <id>default-prepare-agent</id>
+                        <goals><goal>prepare-agent</goal></goals>
+                    </execution>
+                    <execution>
+                        <id>default-report</id>
+                        <phase>prepare-package</phase>
+                        <goals><goal>report</goal></goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+      
   </build>
+  
 </project>
