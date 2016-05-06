@@ -45,11 +45,11 @@ public class MercuryAppController {
 		System.out.println("Hi it's in login method !");
 		ModelAndView model = new ModelAndView();
 		if (error != null) {
-			model.addObject("error", "Invalid Username and Password!");
+			model.addObject("error", "Invalid username and password!");
 		}
 
 		if (logout != null) {
-			model.addObject("msg", "You've been logged out Successfully.");
+			model.addObject("msg", "You've been logged out Successfully. ....");
 		}
 		model.setViewName("login");
 
