@@ -12,23 +12,23 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class LoginTest {
 
 	// Create WebDriver instance
-    //WebDriver driver;
+    WebDriver driver;
 
-   /* @Before
+    @Before
     public void setUp() throws Exception {
         // Initialize the WebDriver instance using FirefoxDriver and launch the web browser
-        //driver = new FirefoxDriver();
+        driver = new FirefoxDriver();
         // Open the application - "https://login.yahoo.com/"
-        //driver.get("http://localhost:8082/MercuryAppInterface/admin");
+        driver.get("http://localhost:8082/MercuryAppInterface/admin");
         // Maximize the current window
-        //driver.manage().window().maximize();
-    }*/
+        driver.manage().window().maximize();
+    }
     @Test
     public void testYahooInvalidLogin() throws Exception {
     	// Initialize the WebDriver instance using FirefoxDriver and launch the web browser
-    	WebDriver driver = new FirefoxDriver();
+    	//WebDriver driver = new FirefoxDriver();
         // Open the application - "https://login.yahoo.com/"
-        driver.get("http://localhost:8082/MercuryAppInterface/admin");
+        //driver.get("http://localhost:8082/MercuryAppInterface/admin");
         // Maximize the current window
         //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
@@ -39,10 +39,10 @@ public class LoginTest {
         //driver.findElement(By.xpath("//a[@class='pull-right login-btn hidden-xs']")).click();
         //driver.findElement(By.xpath("//a[@class='pull-right login-btn hidden-xs']")).click();
     }
-   /* @After
+    @After
     public void tearDown() {
         // Quit the launched web browser
         driver.quit();
-    }*/
+    }
 
 }
