@@ -31,7 +31,7 @@ public class LoginTest {
         //driver.get("http://localhost:8082/MercuryAppInterface/admin");
         // Maximize the current window
         //driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         //driver.switchTo().frame(0);
         driver.findElement(By.name("username")).sendKeys("dks");
         driver.findElement(By.name("password")).sendKeys("dks123");
