@@ -34,7 +34,7 @@ public class LoginTest {
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         //driver.switchTo().frame(0);
         driver.findElement(By.name("username")).sendKeys("dks");
-        driver.findElement(By.name("password")).sendKeys("dks123");
+        driver.findElement(By.name("password")).sendKeys("dks12");
         driver.findElement(By.name("submit")).click();
         //driver.findElement(By.xpath("//a[@class='pull-right login-btn hidden-xs']")).click();
         //driver.findElement(By.xpath("//a[@class='pull-right login-btn hidden-xs']")).click();
