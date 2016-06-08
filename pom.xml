@@ -195,14 +195,12 @@
                         <goals><goal>prepare-agent</goal></goals>
                     </execution>
                     <execution>
-                        <id>default-report</id>
+                        <id>report</id>
                         <phase>prepare-package</phase>
                         <goals><goal>report</goal></goals>
                     </execution>
                 </executions>
             </plugin>
-            
-            
              <plugin>
                     <groupId>com.lazerycode.selenium</groupId>
                     <artifactId>driver-binary-downloader-maven-plugin</artifactId>
