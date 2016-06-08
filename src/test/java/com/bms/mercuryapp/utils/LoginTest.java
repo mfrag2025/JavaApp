@@ -1,4 +1,4 @@
-/*package com.testapp.utils;
+package com.testapp.utils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -46,4 +46,4 @@ public class LoginTest {
     }
 
 }
-*/
+
