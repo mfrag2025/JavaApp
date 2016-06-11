@@ -19,7 +19,7 @@ public class LoginTest {
         // Initialize the WebDriver instance using FirefoxDriver and launch the web browser
         driver = new FirefoxDriver();
         // Open the application - "https://login.yahoo.com/"
-        driver.get("http://localhost:8082/MercuryAppInterface/admin");
+        driver.get("http://localhost:8082/MercuryAppInterface");
         // Maximize the current window
         driver.manage().window().maximize();
     }
